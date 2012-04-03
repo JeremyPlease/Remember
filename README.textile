@@ -1,0 +1,49 @@
+h1. Remember...
+
+A simple webpage that uses "evercookie":http://github.com/samyk/evercookie to store information about about a user that connects with Facebook. Visit "remember.jeremypease.com":http://remember.jeremypease.com for a live example.
+
+h2. What does this actually do?
+
+# User gives Facebook app permission to access his/her information.
+# User information is stored in an evercookie.
+# When user returns to the site: 
+** if Facebook app is still authorized, the site will pull data from Facebokk again and update the evercookie and display user info.
+** if Facebook app is no longer authorized, it will attempt to get the user data from the evercookie, regenerate any deleted cookies, and display the user info.
+** if no data is found in the evercookie, it will ask the user to authorize the Facebook app again.
+
+h2. Why do this?
+
+To simply show that a zombie cookie can store your Facebook information on your computer even after you unauthorize the Facebook app.
+
+h2. How do I make the site forget me?
+
+You can't... Ok, fine, you probably can if you clear all of the data from the things listed above.
+
+h2. What is an evercookie?
+
+Evercookie is a javascript api that uses the following to create a zombie cookie.
+* Standard HTTP Cookies
+* Local Shared Objects (Flash Cookies)
+* Silverlight Isolated Storage 
+* Storing cookies in RGB values of auto-generated, force-cached 
+* PNGs using HTML5 Canvas tag to read pixels (cookies) back out
+* Storing cookies in Web History 
+* Storing cookies in HTTP ETags 
+* Storing cookies in Web cache 
+* window.name caching
+* Internet Explorer userData storage
+* HTML5 Session Storage 
+* HTML5 Local Storage 
+* HTML5 Global Storage 
+* HTML5 Database Storage via SQLite
+Read more about how it works "here":http://samy.pl/evercookie/
+
+h2. License
+
+Copyright (c) 2012 Jeremy Pease
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
