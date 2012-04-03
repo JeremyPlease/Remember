@@ -18,7 +18,7 @@ To simply show that a zombie cookie can store your Facebook information on your 
 h2. How do I make the site forget me?
 
 You can't... 
-Ok, fine, you probably can if you clear all of the data from the things listed above.
+Ok, fine, you probably can if you clear all of the data from the things listed below.
 
 h2. What is an evercookie?
 
